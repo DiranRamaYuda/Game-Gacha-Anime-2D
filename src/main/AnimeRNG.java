@@ -7,6 +7,7 @@ import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 import java.awt.*;
 import java.io.*;
+import java.net.URL;
 import java.util.*;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -490,64 +491,64 @@ public class AnimeRNG extends JFrame {
 
         // Map untuk menyimpan path gambar karakter
         // COMMON
-        Map<String, String> characterImages = new HashMap<>();
-        characterImages.put("Sasuke", getClass().getResource("/character/sasuke.png").getPath());
-        characterImages.put("Itadori", getClass().getResource("/character/itadori.png").getPath());
-        characterImages.put("Yami", getClass().getResource("/character/yami.png").getPath());
-        characterImages.put("Antares", getClass().getResource("/character/antares.png").getPath());
-        characterImages.put("Garou", getClass().getResource("/character/garou.png").getPath());
-        characterImages.put("Touch Me", getClass().getResource("/character/touch_me.png").getPath());
-        characterImages.put("Kurohige", getClass().getResource("/character/kurohige.png").getPath());
-        characterImages.put("Diablo", getClass().getResource("/character/diablo.png").getPath());
-        characterImages.put("Yoriichi", getClass().getResource("/character/yoriichi.png").getPath());
-        characterImages.put("Tanjiro", getClass().getResource("/character/tanjiro.png").getPath());
-        characterImages.put("Levi", getClass().getResource("/character/levi.png").getPath());
-        characterImages.put("Gon", getClass().getResource("/character/gon.png").getPath());
-        characterImages.put("Hisoka", getClass().getResource("/character/hisoka.png").getPath());
-        characterImages.put("Izuku", getClass().getResource("/character/izuku.png").getPath());
-        characterImages.put("Ichigo", getClass().getResource("/character/ichigo.png").getPath());
-        characterImages.put("Ichibei", getClass().getResource("/character/ichibei.png").getPath());
+        Map<String, URL> characterImages = new HashMap<>();
+        characterImages.put("Sasuke", getClass().getResource("/character/sasuke.png"));
+        characterImages.put("Itadori", getClass().getResource("/character/itadori.png"));
+        characterImages.put("Yami", getClass().getResource("/character/yami.png"));
+        characterImages.put("Antares", getClass().getResource("/character/antares.png"));
+        characterImages.put("Garou", getClass().getResource("/character/garou.png"));
+        characterImages.put("Touch Me", getClass().getResource("/character/touch_me.png"));
+        characterImages.put("Kurohige", getClass().getResource("/character/kurohige.png"));
+        characterImages.put("Diablo", getClass().getResource("/character/diablo.png"));
+        characterImages.put("Yoriichi", getClass().getResource("/character/yoriichi.png"));
+        characterImages.put("Tanjiro", getClass().getResource("/character/tanjiro.png"));
+        characterImages.put("Levi", getClass().getResource("/character/levi.png"));
+        characterImages.put("Gon", getClass().getResource("/character/gon.png"));
+        characterImages.put("Hisoka", getClass().getResource("/character/hisoka.png"));
+        characterImages.put("Izuku", getClass().getResource("/character/izuku.png"));
+        characterImages.put("Ichigo", getClass().getResource("/character/ichigo.png"));
+        characterImages.put("Ichibei", getClass().getResource("/character/ichibei.png"));
 
         // UNCOMMON
-        characterImages.put("Naruto", getClass().getResource("/character/naruto.png").getPath());
-        characterImages.put("Asta", getClass().getResource("/character/asta.png").getPath());
-        characterImages.put("Yuno", getClass().getResource("/character/yuno.png").getPath());
-        characterImages.put("Ashborn", getClass().getResource("/character/ashborn.png").getPath());
-        characterImages.put("Rubedo", getClass().getResource("/character/rubedo.png").getPath());
-        characterImages.put("Meliodas", getClass().getResource("/character/meliodas.png").getPath());
-        characterImages.put("Ban", getClass().getResource("/character/ban.png").getPath());
-        characterImages.put("Killua", getClass().getResource("/character/killua.png").getPath());
-        characterImages.put("Tomura", getClass().getResource("/character/tomura.png").getPath());
-        characterImages.put("Yhwach", getClass().getResource("/character/yhwach.png").getPath());
+        characterImages.put("Naruto", getClass().getResource("/character/naruto.png"));
+        characterImages.put("Asta", getClass().getResource("/character/asta.png"));
+        characterImages.put("Yuno", getClass().getResource("/character/yuno.png"));
+        characterImages.put("Ashborn", getClass().getResource("/character/ashborn.png"));
+        characterImages.put("Rubedo", getClass().getResource("/character/rubedo.png"));
+        characterImages.put("Meliodas", getClass().getResource("/character/meliodas.png"));
+        characterImages.put("Ban", getClass().getResource("/character/ban.png"));
+        characterImages.put("Killua", getClass().getResource("/character/killua.png"));
+        characterImages.put("Tomura", getClass().getResource("/character/tomura.png"));
+        characterImages.put("Yhwach", getClass().getResource("/character/yhwach.png"));
 
         // RARE
-        characterImages.put("Sung Jin Woo", getClass().getResource("/character/sung_jin_woo.png").getPath());
-        characterImages.put("Ainz Ooal Gown", getClass().getResource("/character/ainz_ooal_gown.png").getPath());
-        characterImages.put("Shanks", getClass().getResource("/character/shanks.png").getPath());
-        characterImages.put("Veldora", getClass().getResource("/character/veldora.png").getPath());
-        characterImages.put("Escanor", getClass().getResource("/character/escanor.png").getPath());
-        characterImages.put("Muzan", getClass().getResource("/character/muzan.png").getPath());
-        characterImages.put("Ymir", getClass().getResource("/character/ymir.png").getPath());
-        characterImages.put("All Might", getClass().getResource("/character/all_might.png").getPath());
+        characterImages.put("Sung Jin Woo", getClass().getResource("/character/sung_jin_woo.png"));
+        characterImages.put("Ainz Ooal Gown", getClass().getResource("/character/ainz_ooal_gown.png"));
+        characterImages.put("Shanks", getClass().getResource("/character/shanks.png"));
+        characterImages.put("Veldora", getClass().getResource("/character/veldora.png"));
+        characterImages.put("Escanor", getClass().getResource("/character/escanor.png"));
+        characterImages.put("Muzan", getClass().getResource("/character/muzan.png"));
+        characterImages.put("Ymir", getClass().getResource("/character/ymir.png"));
+        characterImages.put("All Might", getClass().getResource("/character/all_might.png"));
 
         // EPIC
-        characterImages.put("Gojo", getClass().getResource("/character/gojo.png").getPath());
-        characterImages.put("Sukuna", getClass().getResource("/character/sukuna.png").getPath());
-        characterImages.put("Luffy", getClass().getResource("/character/luffy.png").getPath());
-        characterImages.put("Rimuru", getClass().getResource("/character/rimuru.png").getPath());
-        characterImages.put("Eren", getClass().getResource("/character/eren.png").getPath());
+        characterImages.put("Gojo", getClass().getResource("/character/gojo.png"));
+        characterImages.put("Sukuna", getClass().getResource("/character/sukuna.png"));
+        characterImages.put("Luffy", getClass().getResource("/character/luffy.png"));
+        characterImages.put("Rimuru", getClass().getResource("/character/rimuru.png"));
+        characterImages.put("Eren", getClass().getResource("/character/eren.png"));
 
         // LEGENDARY
-        characterImages.put("Madara", getClass().getResource("/character/madara.png").getPath());
-        characterImages.put("Goku", getClass().getResource("/character/goku.png").getPath());
-        characterImages.put("Boros", getClass().getResource("/character/boros.png").getPath());
+        characterImages.put("Madara", getClass().getResource("/character/madara.png"));
+        characterImages.put("Goku", getClass().getResource("/character/goku.png"));
+        characterImages.put("Boros", getClass().getResource("/character/boros.png"));
 
         // MYTHICAL
-        characterImages.put("Beerus", getClass().getResource("/character/beerus.png").getPath());
-        characterImages.put("Saitama", getClass().getResource("/character/saitama.png").getPath());
+        characterImages.put("Beerus", getClass().getResource("/character/beerus.png"));
+        characterImages.put("Saitama", getClass().getResource("/character/saitama.png"));
 
         // DEVINE
-        characterImages.put("Zeno", getClass().getResource("/character/zeno.png").getPath());
+        characterImages.put("Zeno", getClass().getResource("/character/zeno.png"));
 
         // Kelompokkan karakter ke dalam rarityGroups berdasarkan inventory
         for (Map.Entry<String, Integer> entry : inventory.entrySet()) {
@@ -567,25 +568,19 @@ public class AnimeRNG extends JFrame {
             for (Map.Entry<String, Integer> entry : sortedCharacters) {
                 String character = entry.getKey();
                 int count = entry.getValue();
-                String imagePath = characterImages.get(character);
+                URL imageUrl = characterImages.get(character);
 
                 // Jika gambar ditemukan, tambahkan ke panel
-                if(imagePath != null) {
-                    Map<String, ImageIcon> cachedImages = new HashMap<>();
-                    ImageIcon resizedIcon;
-                    if(cachedImages.containsKey(imagePath)) {
-                        resizedIcon = cachedImages.get(imagePath);
-                    } else  {
-                        ImageIcon originalIcon = new ImageIcon(imagePath);
-                        Image scaledImage = originalIcon.getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH);
-                        resizedIcon = new ImageIcon(scaledImage);
-                        cachedImages.put(imagePath, resizedIcon);
-                    }
+                if (imageUrl != null) {
+                    ImageIcon resizedIcon = new ImageIcon(new ImageIcon(imageUrl).getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH));
                     JLabel imageLabel = new JLabel(resizedIcon);
                     imageLabel.setHorizontalTextPosition(JLabel.CENTER);
                     imageLabel.setVerticalTextPosition(JLabel.BOTTOM);
                     imageLabel.setText("(" + rarity + ") " + count + "x    "); // Menampilkan jumlah karakter di bawah gambar
                     inventoryPanel.add(imageLabel);
+                } else {
+                    JLabel textLabel = new JLabel("(" + rarity + ") " + character + " - " + count + "x");
+                    inventoryPanel.add(textLabel);
                 }
             }
         }
