@@ -1,7 +1,7 @@
 # Game-Gacha-Anime-2D
 tidak ada lisensi khusus untuk kode program ini, kalian bebas untuk menggunakannya. kreasikan game kalian sendiri!
 
-untuk menjalan game ini kalian harus mendownload library gosn
+untuk menjalan game ini kalian harus mendownload library gson
 1. download library gson https://mvnrepository.com/artifact/com.google.code.gson/gson
 2. download file jar
 3. setelah download pada kode program kalian, pilih menu file
