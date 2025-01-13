@@ -3,7 +3,7 @@ package entity;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
-// FUNCTION ENTITY (BISA DIPAKAI JIKA INGIN MENAMBAHKAN ENTITAS LAIN SEPERTI NPS ATAU MONSTER)
+// FUNCTION ENTITY (BISA DIPAKAI JIKA INGIN MENAMBAHKAN ENTITAS LAIN SEPERTI NPC ATAU MONSTER)
 public class Entity {
     public int x, y;
     public int speed;
